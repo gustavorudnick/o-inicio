@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(75, 74, 74);
+    background-color: rgb(119, 119, 119);
 }
 
 h1{ 
@@ -9,9 +9,18 @@ h1{
 a {
     color: rgb(0, 0, 0);
 }
+
+.botao-voltar {
+        border: 2px solid rgb(85, 85, 190);
+        border-radius: 5px;
+        background-color: rgb(85, 85, 190);
+;
+}
+
 .texto{
-    margin: 40px;
-    padding: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .paragrafo-padrao {
@@ -22,4 +31,10 @@ a {
 .paragrafo-destacado {
     background-color: #F0CCE2;
 
+}
+
+.prefacio {
+    font-size: 12px;
+    width: 300px;
+    margin: auto
 }

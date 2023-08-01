@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes e documentações</title>
+    <style>
+        h2{
+            font-size: 35px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="text-align: center;">
+
+        <p>Cabeçalho <br>
+            Aqui fica o Cabeçalho
+        </p>
+        <hr>
+    </header>
+
+    <h1>Inputs</h1>
+    <hr>
+
+    <h2>Input Text</h2>
+        <div>
+            <!-- <label for="id do input">Descrição</label> -->
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome como placeholder"> <br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email como placeholder">
+        </div>
+        <hr>
+
+     <h2>Input number, Password e Submit</h2>   
+        <div>
+            <label for="numero">Numero</label>    
+            <input id="numero" type="number"> <br>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password"> <br>
+
+            <input type="submit" value="Texto do botão enviar"> 
+        </div>
+        <hr>
+
+    <h2>Checkbox e Radio</h2>
+        <div>
+            <label >Selecione Linguegens que você sabe</label><br>
+            <label for="C++">C++</label>
+            <input id="C++" type="checkbox" name="Linguagens"><br>
+            <label for="java">Java</label>
+            <input id="java" type="checkbox" name="Linguagens"><br>
+            <label for="outras">Outras</label>
+            <input id="outras" type="checkbox" name="Linguagens" checked><br>
+            <br>
+
+            <!-- <input type="checkbox" permite usar sintaxe "checked", para ja marcar por padrão -->
+            <label >Selecione seu gênero:</label><br>
+            <label for="masculino">Masculino</label>
+            <input id="masculino" type="radio" name="sexo"><br>
+            <label for="feminino">Feminino</label>
+            <input id="feminino" type="radio" name="sexo"><br>
+            <label for="heli">Helicóptero de Combate</label>
+            <input id="heli" type="radio" name="sexo"><br>
+        </div>
+        <hr>
+
+    <h2>Select</h2>
+        <div>
+            <label for="pokemon">Selecione a Melhor Geração de Pokémon</label> <br>
+            <select name="pokemon" id="pokemon">
+                <option value="" select>Selecione (com cuidado)</option>
+                <option value="Fire/Red">Fire/Red</option>
+                <option value="Gold/Silver">Soul/Silver</option>
+                <option value="Ruby/Sapphire">Ruby/Sapphire</option>
+                <option value="Diamond/Pearl">Diamond/Pearl</option>
+                <option value="Black/White">Black/White</option>
+                <option value="X/Y">X/Y</option>
+                <option value="Sun/Moon">Sun/Moon</option>
+                <option value="Sword/Shield">Sword/Shield</option>
+                <option value="Scarlet/Violet">Scarlet/Violet</option>
+            </select>
+
+            <!-- Na tag 
+                        <option value="value">Desctição</option>
+                o que é enviado pro servidor é o que está definido como "value", não a descrição 
+                 Tambem permite o atributo "selected" pra selecionar o valor como padrão
+
+                A tag 
+                        <select name="selecao"> 
+                permite o atribute "multiple", mas fica meio meh
+
+            -->
+        </div>
+        <hr>
+
+    <h2>Textarea</h2>
+        <div>
+            <textarea style="resize:none" 
+                name="area-de-texto" 
+                id="area-de-texto" 
+                cols="50" 
+                rows="5" 
+                maxlength="1000" 
+                placeholder="Max:1000 char">
+            </textarea>
+
+        </div>
+        <hr>
+
+    <h2>Button</h2>
+        <div>
+            <label>Um botão simple com a tag &lt;button&gt; </label>
+            <button>Clique</button> <br>
+            
+            <label>Um botão com a tag &lt;input type="button"&gt;, com ação de clique </label>
+            <input type="button" value="Clique" 
+            onclick="alert('Clicou')">
+        </div>
+        <hr>
+
+    <h2>Formulários GET e POST</h2> 
+            <label>Caixa de formulário com GET</label>
+            <form action="index.html" method="get">
+                <input type="text" name="q">
+                <input type="submit">
+            </form>
+            <br>
+
+            <label>Caixa de formulário com POST</label>
+            <form action="index.html" method="post">
+                <input type="text" name="q">
+                <input type="submit">
+            </form>
+            <br>
+            <div>
+                A diferença do GET e do POST: <br>
+                GET - mostra as informações na url, e encaminha pro alvo em "action" <br>
+                POST - Envia informações para um backend
+            </div>
+            <hr>
+
+    <h2>TAGs semênticas</h2>
+            <p>As tags semânticas são relevantes para motores de busca</p>
+                
+            <h2>NAV</h2>
+                <nav>
+                    <ul>
+                        <li><a href="/menu1">Menu 1</a></li>
+                        <li><a href="/menu2">Menu 2</a></li>
+                        <li><a href="/menu3">Menu 3</a></li>
+                    </ul>
+                </nav>
+                
+
+                <h2>Section</h2>
+                    <section>
+                        <p>Usado para separar a pagina em seções <br>
+                        🤣 ...
+                        </p>
+                    </section>
+
+                <h2>Article</h2>
+                    <p>Usado para dar enfase e separação de assuntos</p>
+                    <article style="color: blue;">
+                        <p>Assunto 1 , Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem rem nostrum voluptatibus odio delectus at nam similique perferendis numquam molestiae quia, est officia officiis velit dolor facere. Et, odio?</p>
+                    </article>
+
+                    <article style="color: blueviolet;">
+                        <p>Assunto 2, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni praesentium placeat corrupti amet, vel temporibus aliquid a, similique ad expedita odio. Aut, eum. Nisi at vero doloribus illum autem cupiditate!</p>
+                    </article>
+
+                <h2>Aside</h2>
+                    <p>Usado para conteúdo extra na página</p>
+                        <aside>
+                            <p style="background-color: blue; width:fit-content; color: yellow; border-radius: 5px;">Isto é um conteúdo extra <br> separado dos resto</p>
+                        </aside>
+                
+                <h2>Figure</h2>
+                        <figure>
+                            <p>Usado pra englobar imagens <br>
+                            <figcaption>Usar "figcaption" para Legenda pra imagem</figcaption>    
+                            </p>
+                        </figure>
+
+                <h2>Address</h2>
+                        <address>Informações relevantes a endereço e contatos <br>
+                            Fica automaticamente em Italico
+                        </address>
+                
+            <hr>
+
+            <div class="grid-botoes">
+                <a class="botao-voltar" href="index.html">Voltar</a>
+                <a class="botao-inicio" href="index.html">Início</a>
+                <a class="botao-topo" href="#top">Topo</a>
+            </div>
+
+
+
+
+
+
+            <footer style="text-align: center;">
+
+                <p>Rodapé <br>
+                    Aqui fica o Rodapé
+                </p>
+                <hr>
+            </footer>
+    
+</body>
+</html>

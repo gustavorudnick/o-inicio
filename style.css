@@ -1,20 +1,36 @@
 html {
     background-color: rgb(119, 119, 119);
+    font-size: 40px;
 }
 
 h1{ 
     color: rgb(51, 255, 0);
+    font-size: 80px;
 }
 
 a {
     color: rgb(0, 0, 0);
 }
 
-.botao-voltar {
-        border: 2px solid rgb(85, 85, 190);
+.grid-botoes {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+}
+
+.botao-voltar, .botao-inicio, .botao-topo{
+        font-size: 40px;
+        border: none;
         border-radius: 5px;
         background-color: rgb(85, 85, 190);
-;
+        padding: 5px;
+}
+
+
+.botao-voltar:hover, .botao-inicio:hover , .botao-topo:hover{
+    background-color: rgb(47, 47, 124);
+    color: white;
+    
 }
 
 .texto{
@@ -34,7 +50,34 @@ a {
 }
 
 .prefacio {
-    font-size: 12px;
-    width: 300px;
-    margin: auto
+    font-size: 32px;
+    width: 70%;
+    margin: auto;
+}
+
+/* CSS em Links */
+.link-active:active {
+    color: brown;
+}
+.link-visited:visited {
+    color: yellow;
+}
+.link-hover:hover {
+    background-color: blue;
+    color:white
+}
+.link-cursor-muda {
+    cursor: not-allowed;
+}
+
+ul {
+    list-style-type: square;
+}
+
+pre {
+    font-size: 32px;
+    border-left: solid 10px rgb(197, 197, 195);
+    padding-left: 15px;
+    margin-left: 100px;
+    
 }

@@ -3,11 +3,6 @@ html {
     font-size: 40px;
 }
 
-a {
-    text-decoration: none;
-}
-
-
 h1{ 
     color: rgb(51, 255, 0);
     font-size: 80px;
@@ -15,6 +10,7 @@ h1{
 
 a {
     color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .grid-botoes {
